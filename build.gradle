@@ -1,0 +1,32 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.6.RELEASE'
+	id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.gosilbo.infrastructure'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '12'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	// https://mvnrepository.com/artifact/software.amazon.awscdk/core
+	compile group: 'software.amazon.awscdk', name: 'core', version: '1.1.0.DEVPREVIEW'
+
+	// https://mvnrepository.com/artifact/software.amazon.awscdk/ec2
+	compile group: 'software.amazon.awscdk', name: 'ec2', version: '1.1.0.DEVPREVIEW'
+
+	// https://mvnrepository.com/artifact/software.amazon.awscdk/ecs
+	compile group: 'software.amazon.awscdk', name: 'ecs', version: '1.1.0.DEVPREVIEW'
+
+	// https://mvnrepository.com/artifact/software.amazon.awscdk/ecs-patterns
+	compile group: 'software.amazon.awscdk', name: 'ecs-patterns', version: '1.1.0.DEVPREVIEW'
+
+}
