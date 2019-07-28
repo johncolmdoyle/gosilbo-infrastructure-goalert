@@ -4,7 +4,7 @@ import software.amazon.awscdk.core.App;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GoalertApplication {
+public class GoAlertApplication {
 
 	public static void main(String[] args) {
 
